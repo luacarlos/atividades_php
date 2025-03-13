@@ -15,7 +15,23 @@ class Administrador extends Logar{
         $this->login = $login;
     }
 
-    
+    public function logavel(){
+        return "logando...";
+    }
+
+}
+class Usuario extends Logar{
+    public $nome;
+    public $login;
+
+    public function __construct($nome, $login) {
+        $this->nome = $nome;
+        $this->login = $login;
+    }
+
+    public function logavel(){
+        return "logando...";
+    }
 
 }
 
