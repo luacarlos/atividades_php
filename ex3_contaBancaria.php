@@ -15,7 +15,7 @@ class ContaBancaria {
     }
 
     public function sacar($valor){
-        if ($this->saldo > 0){
+        if ($this->saldo > 0 && $valor <= $this->saldo){
             $resultado= $this-> saldo-$valor;
             return "O novo saldo da conta após o saque é de: " . $resultado . "<br>";
         }
